@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.FXMLCourseController">
+   <top>
+      <Pane prefHeight="86.0" prefWidth="600.0" style="-fx-background-color: orange;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="90.0" layoutY="20.0" text="Courses List (Doubly Linked List)">
+               <font>
+                  <Font name="Arial" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <TableView fx:id="courseTableVIew" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="idTableColumn" prefWidth="166.0" text="ID" />
+          <TableColumn fx:id="nameTableColumn" prefWidth="459.0" text="Name" />
+            <TableColumn fx:id="creditsTableColumn" prefWidth="114.0" text="Credits" />
+        </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <Pane prefHeight="125.0" prefWidth="740.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnAdd" layoutX="24.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="39.0" prefWidth="110.0" text="Add">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font></Button>
+            <Button fx:id="btnAddFirst" layoutX="146.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnAddFirstOnAction" prefHeight="39.0" prefWidth="153.0" text="Add First">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAddSorted" layoutX="312.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnAddSortedOnAction" prefHeight="39.0" prefWidth="160.0" text="Add Sorted">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnContains" layoutX="484.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnContainsOnAction" prefHeight="39.0" prefWidth="130.0" text="Contains">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSize" layoutX="626.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnSizeOnAction" prefHeight="39.0" prefWidth="100.0" text="Size">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnRemove" layoutX="315.0" layoutY="72.0" mnemonicParsing="false" onAction="#btnRemoveOnAction" prefHeight="39.0" prefWidth="120.0" text="Remove">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnRemoveFirst" layoutX="446.0" layoutY="72.0" mnemonicParsing="false" onAction="#btnRemoveFirstOnAction" prefHeight="39.0" prefWidth="171.0" text="Remove First">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnClear" layoutX="626.0" layoutY="72.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="39.0" prefWidth="100.0" text="Clear">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnGetLast" layoutX="146.0" layoutY="72.0" mnemonicParsing="false" onAction="#btnGetLastOnAction" prefHeight="39.0" prefWidth="159.0" text="Get Last">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnGetFirst" layoutX="24.0" layoutY="72.0" mnemonicParsing="false" onAction="#btnGetFirstOnAction" prefHeight="39.0" prefWidth="113.0" text="Get First">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </bottom>
+</BorderPane>
